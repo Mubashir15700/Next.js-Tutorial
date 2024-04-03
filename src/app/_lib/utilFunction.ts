@@ -1,0 +1,3 @@
+function utilFunction() {
+    return null
+}
