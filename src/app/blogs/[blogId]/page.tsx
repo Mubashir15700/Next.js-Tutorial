@@ -18,6 +18,10 @@ export const generateMetaData = async ({ params }: Props): Promise<Metadata> => 
 }
 
 const Blog = ({ params }: Props) => {
+    if (parseInt(params.blogId) === 10) {
+        throw new Error("Error while loading blog");
+    }
+
     return (
         <div>Blog {params.blogId}</div>
     )

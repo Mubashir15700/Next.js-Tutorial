@@ -3,6 +3,10 @@ export default function ProductDetailsLayout({
 }: {
     children: React.ReactNode
 }) {
+    if (new Date().getDay() === 4) {
+        throw new Error("Error in blog layout");
+    }
+
     return (
         <>
             {children}
